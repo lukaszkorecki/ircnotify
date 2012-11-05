@@ -1,24 +1,80 @@
 # Ircnotify
 
-TODO: Write a gem description
+Simple tool for sending messages to IRC.
 
-## Installation
+`ircnotify` can be used for:
 
-Add this line to your application's Gemfile:
+- notifying when Chef has finished creating a new VM
+- new code has been pushed to production and your apps are running
+- you're compiling something and want to get notified when it's finished
+- possibly more
 
-    gem 'ircnotify'
 
-And then execute:
+Simply:
 
-    $ bundle
+- create a config (take a look at `example_conf.yml`)
 
-Or install it yourself as:
+- install `ircnotify`
 
-    $ gem install ircnotify
+- send your message: `$ ircnotify -m "task finished!"`
+
+- done
+
+
+## 1000 words and oneliner
+
+
+```
+$ ircnotify -m "yooooooo"
+
+```
+![screen](http://i.imgur.com/3YNT0.png)
+
+
+## Example configuration
+
+
+```yaml
+nick: notifier
+server: your.irc.com
+port: 6667
+password: 's4kr1t'
+ssl:
+  use: true
+  verify: false
+
+channels:
+  - '#test'
+  - '#test2'
+```
+
+`ircnotify` is based on [Cinch](https://github.com/cinchrb/cinch) and makes use of
+some of config options, but not all. They are trivial to add though.
+
+
+By default `ircnofity` reads the config from `~/.ircnotify`
 
 ## Usage
 
-TODO: Write usage instructions here
+
+```
+Options:
+      ircnotifier 0.0.1
+      Usage:
+        ircnotifier <opts> --message "your message"
+
+      Options:
+    --config, -c <s>:   Config file (default: /Users/lukasz/.ircnotifier)
+   --message, -m <s>:   Your message (default: test)
+          --help, -e:   Show this message
+
+```
+
+## Installation
+
+```
+    $ gem install ircnotify
+```
 
 ## Contributing
 
