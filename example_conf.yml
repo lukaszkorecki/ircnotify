@@ -1,0 +1,12 @@
+nick: notifier
+server: your.irc.com
+port: 6667
+password: 's4kr1t'
+ssl:
+  use: true
+  verify: false
+
+channels:
+  - '#test'
+  - '#test2'
+
