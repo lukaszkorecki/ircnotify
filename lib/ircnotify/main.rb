@@ -9,7 +9,7 @@ module Ircnotify
 
       Options:
       EOS
-      opt :config, "Config file", :type => :string, :default => File.expand_path("~/.ircnotifier")
+      opt :config, "Config file", :type => :string, :default => File.expand_path("~/.ircnotify")
       opt :message, "Your message", :type => :string, :default => 'test'
       # TODO
       # opt :notice, "Use /notice <channel>", :default => false
