@@ -10,7 +10,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["lukasz@coffeesounds.com"]
   gem.description   = %q{Send a message to your IRC server/channel straight from the terminal}
   gem.summary       = %q{IRC notifier, useful for automating messages sent by deployment tools or test runners}
-  gem.homepage      = ""
+  gem.homepage      = "https://github.com/lukaszkorecki/ircnotify"
 
   gem.files         = `git ls-files`.split($/)
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
