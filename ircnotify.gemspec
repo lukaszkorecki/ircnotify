@@ -18,4 +18,5 @@ Gem::Specification.new do |gem|
   gem.require_paths = ["lib"]
   gem.add_runtime_dependency "cinch", ">= 0"
   gem.add_runtime_dependency "trollop", ">= 0"
+  gem.add_development_dependency "pry", ">= 0"
 end
