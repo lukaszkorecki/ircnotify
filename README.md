@@ -58,16 +58,14 @@ By default `ircnofity` reads the config from `~/.ircnotify`
 
 
 ```
-Options:
-      ircnotifier 0.0.1
       Usage:
         ircnotifier <opts> --message "your message"
 
       Options:
-    --config, -c <s>:   Config file (default: /Users/lukasz/.ircnotifier)
-   --message, -m <s>:   Your message (default: test)
-          --help, -e:   Show this message
-
+   --config, -c <s>:   Config file (default: /Users/lukasz/.ircnotify)
+  --message, -m <s>:   Your message (default: test)
+      --verbose, -v:   Be very verbose (default off)
+         --help, -h:   Show this message
 ```
 
 ## Installation
