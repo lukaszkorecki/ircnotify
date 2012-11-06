@@ -1,7 +1,8 @@
 module Ircnotify
   class Notifier
-    def initialize message, is_notice=false
+    def initialize message, verbose=false
       @bot = ::Cinch::Bot.new do
+        self.loggers = NullLogger.new if not verbose
         configure do |c|
           # TODO FIXME
           # this doesn't handle all nested config options!
